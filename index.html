@@ -12,7 +12,7 @@
     <header class="cabecalho">
         <div class="container">
             <input type="checkbox" id="menu" class="container__botao">
-            <label for="menu">
+            <label for="menu" class="container__rotulo">
                 <span class="cabecalho__menu-hamburger container__imagem"></span>
             </label>
             <ul class="lista-menu">
@@ -39,8 +39,7 @@
 
         <ul class="opcoes">
             <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
-            <label for="opcoes-menu">
-                <span class="cabecalho__menu-hamburger"></span>
+            <label for="opcoes-menu" class="opcoes__rotulo">
                 <li class="opcoes__item">Categorias</li>
             </label>
             <ul class="lista-menu">
@@ -62,15 +61,21 @@
             </ul>
             <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
             <li class="opcoes__item"><a href="#" class="opcoes__link">Minha Estante</a></li>
-
         </ul>
 
         <div class="container">
-            <a href="#"><img src="./assets/Favoritos.svg" alt="Meu Favoritos" class="container__imagem container__image-transparente"></a>
-            <a href="#"><img src="./assets/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
-            <a href="#"><img src="./assets/Usuário.svg" alt="Meu perfil" class="container__imagem"></a>
+            <a href="#">
+                <img src="./assets/Favoritos.svg" alt="Meu Favoritos" class="container__imagem container__image-transparente">
+            </a>
+            <a href="#" class="container__link">
+                <img src="./assets/Compras.svg" alt="Carrinho de compras" class="container__imagem">
+                <p class="container__texto">Minha Sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="./assets/Usuário.svg" alt="Meu perfil" class="container__imagem">
+                <p class="container__texto">Meu Perfil</p>
+            </a>
         </div>
-
     </header>
     <section class="banner">
         <h2 class="banner__titulo">Já sabe por onde começar?</h2>
@@ -80,6 +85,7 @@
 
     <section class="carrossel">
         <h2 class="carrossel__titulo">Últimos Lançamentos</h2>
+        <div class="carrossel__container">
         <div class="swiper">
             <div class="swiper-pagination"></div>
             <div class="swiper-wrapper">
@@ -118,7 +124,11 @@
                 <a href="#" class="botoes__ancora">Saiba mais</a>
             </div>
         </div>
+    </div>
+    </section>
+    <section class="carrossel">
             <h2 class="carrossel__titulo">Mais Vendidos</h2>
+            <div class="carrossel__container">
             <div class="swiper">
                 <div class="swiper-pagination"></div>
                 <div class="swiper-wrapper">
@@ -158,6 +168,7 @@
                     <a href="#" class="botoes__ancora">Saiba mais</a>
                 </div>
             </div>
+        </div>
     </section>
 
     <section class="topicos">
